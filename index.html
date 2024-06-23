@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <Title>Mapa y clima</Title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mapa y clima</h1>
+        <input type="text" id="locationInpt" placeholder="Ingrese Ubicacion">
+    </header>
+    <div class="dataContainer">
+        <div id="climateStatus">
+            <p></p>
+        </div>
+        <div id="mapDisplayer"></div>
+    </div>
+    <script src="./app.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxlO8ILdL4GvaE8wreaAke_-k3Al4V-IM&libraries=places&callback=initMap"
+        async defer>
+        </script>
+
+</body>
+
+</html>

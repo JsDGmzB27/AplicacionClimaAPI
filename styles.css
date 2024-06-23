@@ -1,0 +1,30 @@
+html{
+    color: beige;
+    background-color: rgb(134, 134, 130);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(78, 78, 73);
+    border-radius: 50px;
+}
+
+header{
+    padding: 1%;
+    border-radius: 10px;
+    
+}
+
+#climateStatus{
+   padding-left: 1% ;
+}
+
+.climateImg{
+    height: 30px;
+    width: 30px;
+}
+
+#mapDisplayer{
+    height: 100vh;
+    width: 100%;
+}
