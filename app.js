@@ -43,7 +43,7 @@ async function fetchWeather(lat, long) {
 function weatherStatus(code, hour){
     if (code < 30 && hour == 0 ){
         return "./assets/night.png"
-    } else if ( hour !== 0 ) {
+    } else if (code < 30 && hour !== 0 ) {
         return "./assets/sunny.png"
     } else if (code < 60){ 
         return "./assets/partialCloudly.png"
