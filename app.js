@@ -57,10 +57,26 @@ function weatherStatus(code, hour){
 }
 
 function Weather(weather) {
+    const icon = document.getElementById('icon')
     const weatherDiv = document.getElementById('climateStatus');
+    const windDirDiv = document.getElementById('humidity');
+    const windDiv = document.getElementById('windSpeed');
+
+    icon.innerHTML = `
+    <img class="climateImg" src=${weatherStatus(weather.weathercode, weather.is_day)} />
+    `
+    
+
     weatherDiv.innerHTML = `
-        <h3>Clima Actual</h3>
-        <p>Temperatura: ${weather.temperature} °C, <img class="climateImg" src=${weatherStatus(weather.weathercode, weather.is_day)} / > </p>
-    `;
+        <h3>Clima Actual: </h3>
+        <p>Temperatura: ${weather.temperature} °C</p>`
+
+    windDirDiv.innerHTML = `
+       <h3>Dirección del viento:</h3>
+       <p>${weather.winddirection}°</p>`
+
+    windDiv.innerHTML = `
+    <h3>Velocidad del viento:</h3>
+       <p>${weather.windspeed} km/h</p>`
 }
 
